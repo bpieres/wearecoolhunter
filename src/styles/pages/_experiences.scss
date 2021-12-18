@@ -1,0 +1,399 @@
+.experiences {
+    background-color: $dark;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    max-width: 100vw;
+
+    &__header {
+        padding-top: 80px;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid rgba($color: $golden, $alpha: 0.2);
+
+        .video-placeholder {
+            color: #ffffff;
+            font-size: 22px;
+            opacity: 0.65;
+            height: fit-content;
+            font-family: "Lt";
+            letter-spacing: 1px;
+        }
+    }
+
+    &__description {
+        max-width: 750px;
+        margin: 100px auto 50px auto;
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            font-family: "Lt";
+            margin-bottom: 50px;
+
+            b {
+                font-family: "BdEx";
+            }
+        }
+
+        &--arrow {
+            margin: auto;
+        }
+    }
+
+    &__list {
+        margin-top: 70px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto, 1fr);
+        width: 100%;
+        padding: 50px 5px;
+        margin: auto;
+        gap: 50px;
+        overflow-x: hidden;
+
+        @include desktop-up {
+            grid-template-columns: repeat(3, 350px);
+            grid-template-rows: 1fr;
+            max-width: 1200px;
+            gap: 50px;
+            padding: 50px 40px;
+        }
+
+        &-item {
+            width: 100%;
+            max-width: 350px;
+            height: 100%;
+            padding: 30px 5px;
+            display: grid;
+            grid-auto-rows: auto;
+            gap: 50px;
+            margin: auto;
+
+            @include desktop-up {
+                margin: unset;
+            }
+
+            .item--title {
+                font-size: 18px;
+                font-family: "BlkEx";
+            }
+            .item--square {
+                border: 1px solid $golden;
+                height: 420px;
+                width: 280px;
+                margin: auto;
+                position: relative;
+                transition: all ease 0.2s;
+
+                @include mobile-lg-up {
+                    width: 320px;
+                }
+
+                &:hover {
+                    background-color: #0066ff;
+                    border: 1px solid #0066ff;
+                }
+            }
+            .item--description {
+                width: 100%;
+                max-width: 280px;
+                margin: auto;
+                padding: 20px 15px;
+                font-size: 15px;
+                font-family: "Lt";
+                letter-spacing: 1px;
+            }
+            .item--img {
+                &-gastronomy {
+                    width: 290px;
+                    top: 55px;
+                    right: -35px;
+
+                    @include mobile-lg-up {
+                        top: 20px;
+                        width: 400px;
+                        right: -15px;
+                    }
+                }
+                &-fashion {
+                    width: 280px;
+                    height: 480px;
+                    top: -62px;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                }
+                &-lifestyle {
+                    top: 55px;
+                    left: -40px;
+                    width: 340px;
+
+                    @include mobile-lg-up {
+                        left: -70px;
+                        width: 400px;
+                    }
+                }
+            }
+            .item--button {
+                display: flex;
+                justify-content: center;
+
+                button {
+                    background-color: white;
+                    color: $golden;
+                    width: 200px;
+                    padding: 20px 5px;
+                    margin-right: 15px;
+                    font-size: 17px;
+                    font-family: "LtEx";
+                    cursor: pointer;
+                    border: none;
+                    transition: all ease 0.2s;
+
+                    &:hover {
+                        background-color: #0066ff;
+                        color: white;
+                    }
+                }
+                .arrow-right {
+                    transform: rotate(270deg);
+                }
+            }
+        }
+    }
+
+    &__status {
+        text-align: center;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        padding: 30px 50px;
+    }
+
+    &__selected {
+        transition: all ease 0.3s;
+        border-top: 1px solid $golden;
+        padding: 100px 15px 50px 15px;
+
+        .gastronomy__selected--columns {
+            display: flex !important;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+            align-content: center;
+
+            .item--buttons {
+                display: flex;
+                flex-direction: column;
+                justify-items: center;
+
+                .visit-website {
+                    background-color: white;
+                    color: $golden;
+                    width: 200px;
+                    height: fit-content;
+                    text-align: center;
+                    margin: 0px auto 10px auto;
+                    padding: 15px 5px;
+                    font-size: 15px;
+                    font-family: "LtEx";
+                    cursor: pointer;
+                    border: none;
+                    transition: all ease 0.2s;
+
+                    &:hover {
+                        background-color: #0066ff;
+                        color: white;
+                    }
+                }
+                .arrow-right {
+                    transform: rotate(270deg);
+                }
+            }
+            .info {
+                p {
+                    max-width: 400px;
+                    font-size: 1em !important;
+                    color: white;
+                }
+            }
+
+            @include tablet-up {
+                display: grid !important;
+                grid-template-columns: 4fr 8fr;
+                grid-auto-rows: auto;
+                column-gap: 100px;
+                row-gap: 50px;
+
+                .item--buttons {
+                    justify-items: end;
+
+                    .visit-website {
+                        margin: 0px 0 10px auto;
+                    }
+                }
+            }
+        }
+        .experiences__selected--columns {
+            display: flex !important;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+            align-content: center;
+        }
+        .fashion__selected--columns {
+            display: flex !important;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+            align-content: center;
+
+            .item--buttons {
+                display: flex;
+                flex-direction: column;
+                justify-items: center;
+
+                .visit-website {
+                    background-color: white;
+                    color: $golden;
+                    width: 250px;
+                    height: fit-content;
+                    text-align: center;
+                    margin: 0px auto 10px auto;
+                    padding: 15px 5px;
+                    font-size: 15px;
+                    font-family: "LtEx";
+                    cursor: pointer;
+                    border: none;
+                    transition: all ease 0.2s;
+
+                    &:hover {
+                        background-color: #0066ff;
+                        color: white;
+                    }
+                }
+                .arrow-right {
+                    transform: rotate(270deg);
+                }
+            }
+            @include tablet-up {
+                display: grid !important;
+                grid-template-columns: 4fr 8fr;
+                grid-auto-rows: auto;
+                column-gap: 100px;
+                row-gap: 50px;
+
+                .item--buttons {
+                    justify-items: end;
+
+                    .visit-website {
+                        margin: 0px 0 10px auto;
+                    }
+                }
+            }
+        }
+        .info {
+            p {
+                font-family: "Lt";
+                max-width: 550px;
+                margin: auto !important;
+                font-size: 1em !important;
+                color: white;
+            }
+        }
+    }
+
+    .hide--button {
+        border: 1px solid $golden;
+        border-radius: 50%;
+        padding: 5px;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+
+        &-arrow {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__pages {
+        padding: 50px 0;
+        width: 100%;
+        overflow-x: hidden;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+        align-content: center;
+        height: fit-content;
+
+        .page-item {
+            max-width: fit-content;
+            display: flex;
+            flex-direction: row;
+
+            &--left {
+                margin-right: auto;
+                .page-item--img {
+                    left: -115px;
+                }
+                .fa-long-arrow-right {
+                    transform: rotate(180deg);
+                }
+                .page-item--link {
+                    span:hover {
+                        color: $golden;
+                    }
+                }
+            }
+            &--right {
+                margin-left: auto;
+                .page-item--img {
+                    right: 0;
+                    width: 300px;
+                }
+                .page-item--link {
+                    span:hover {
+                        color: #2c71f6;
+                    }
+                }
+            }
+
+            &--img {
+                display: none;
+
+                @include laptop-up {
+                    display: block;
+                    width: 300px;
+                }
+            }
+            &--link {
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                display: flex;
+                cursor: pointer;
+
+                span {
+                    color: $golden;
+                    font-family: "BlkEx";
+                    font-size: 12px;
+                    letter-spacing: 0.5px;
+                    margin: 0 15px;
+                    transition: color ease 0.3s;
+                    align-self: center;
+
+                    @include mobile-lg-up {
+                        font-size: 20px;
+                    }
+                }
+                .fa-long-arrow-right {
+                    align-self: center;
+                }
+            }
+        }
+    }
+}

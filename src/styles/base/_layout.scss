@@ -1,0 +1,48 @@
+html,
+body {
+    width: 100%;
+    min-width: unset !important;
+    // margin: 0;
+    overflow-x: hidden;
+}
+#___gatsby {
+    width: 100%;
+}
+
+.position-relative {
+    position: relative;
+}
+
+#gatsby-focus-wrapper {
+    position: relative;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr;
+}
+
+.social-media--widget {
+    position: fixed;
+    bottom: 50px;
+    left: 70px;
+    z-index: 15;
+
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-content: center;
+    gap: 15px;
+
+    max-width: 70px;
+
+    a {
+        transition: all linear 0.2s;
+        &:hover {
+            transform: scale(1.3);
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}

@@ -1,0 +1,78 @@
+@import "~react-responsive-carousel/lib/styles/carousel.css";
+
+.quote-slide {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    margin: auto;
+
+    h4 {
+        height: fit-content;
+        line-height: 100%;
+        font-family: "BlkEx", sans-serif;
+        color: #2c71f6;
+        max-width: 480px;
+    }
+}
+
+.home {
+    .carousel-root {
+        max-width: 100vw !important;
+        height: 400px;
+
+        .carousel {
+            .slide {
+                background-color: white;
+            }
+        }
+    }
+    .carousel .control-prev.control-arrow {
+        left: 100px;
+        background-image: url(/arrows/left.svg);
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-size: 35px;
+        width: 40px;
+        opacity: 1;
+        &::before {
+            border-right: none;
+        }
+        &:hover {
+            background: url(/arrows/left.svg);
+            background-repeat: no-repeat;
+            background-position-y: center;
+            background-size: 35px;
+        }
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+    .carousel .control-next.control-arrow {
+        right: 100px;
+        background-image: url(/arrows/right.svg);
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-size: 35px;
+        width: 40px;
+        opacity: 1;
+        &::before {
+            border-left: none;
+        }
+        &:hover {
+            background: url(/arrows/right.svg);
+            background-repeat: no-repeat;
+            background-position-y: center;
+            background-size: 35px;
+        }
+
+        @media (max-width: 768px) {
+            height: fit-content;
+            right: calc(50% - 20px);
+            bottom: 0;
+            top: 300px;
+        }
+    }
+}

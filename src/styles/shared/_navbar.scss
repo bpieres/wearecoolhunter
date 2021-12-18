@@ -1,0 +1,191 @@
+.navbar {
+    height: 90px !important;
+    border-bottom: 1px solid $golden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+
+    button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+        &:focus {
+            outline: none;
+            text-decoration: underline;
+        }
+    }
+
+    .navbar-title-desktop {
+        display: none;
+    }
+    .navbar-title-mobile {
+        display: grid;
+        align-items: center;
+
+        h1 {
+            a {
+                color: white;
+                text-transform: uppercase;
+                font-family: "BlkCn", sans-serif;
+                font-weight: bolder;
+            }
+        }
+    }
+    .navbar-brand {
+        height: 100%;
+        padding: 0 25px;
+        display: grid;
+        grid-template-columns: 75px auto;
+        justify-content: space-between;
+    }
+
+    .navbar-menu {
+        .navbar-end {
+            .navbar-item {
+                color: $golden;
+                font-family: "Lt", sans-serif;
+                text-transform: uppercase;
+                color: $golden !important;
+                font-size: 15px;
+                margin: auto 20px;
+
+                &--content {
+                    text-decoration: none;
+                    z-index: 1;
+                    position: relative;
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 3px;
+                        bottom: 0;
+                        left: 0;
+                        background: #7e7e7e;
+                        visibility: hidden;
+                        border-radius: 5px;
+                        transform: scaleX(0);
+                        transition: 0.2s linear;
+                    }
+                    &:hover:before,
+                    &:focus:before {
+                        visibility: visible;
+                        transform: scaleX(1);
+                    }
+                }
+            }
+        }
+    }
+
+    @include laptop-up {
+        height: 80px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+
+        .navbar-title-mobile {
+            display: none !important;
+        }
+        .navbar-brand {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        .navbar-title-desktop {
+            display: grid;
+            align-items: center;
+
+            h1 {
+                a {
+                    color: white;
+                    text-transform: uppercase;
+                    font-family: "BlkCn", sans-serif;
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+
+    @include from($widescreen) {
+    }
+}
+
+.navbar--drawer {
+    position: fixed;
+    background-color: $dark;
+    border-right: 5px solid $golden;
+    width: 0;
+    max-width: 380px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: all ease-in 0.3s;
+    display: flex;
+    align-content: center;
+
+    &__menu {
+        max-width: 480px;
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-auto-rows: auto;
+        gap: 20px;
+
+        .navbar-item {
+            text-align: center;
+            color: $golden !important;
+            margin: auto;
+            font-family: "Lt";
+            text-transform: uppercase;
+
+            &--content {
+                text-decoration: none;
+                z-index: 1;
+                position: relative;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 2px;
+                    bottom: 0;
+                    left: 0;
+                    background: #7e7e7e;
+                    visibility: hidden;
+                    border-radius: 5px;
+                    transform: scaleX(0);
+                    transition: 0.2s linear;
+                }
+                &:hover:before,
+                &:focus:before {
+                    visibility: visible;
+                    transform: scaleX(1);
+                }
+            }
+        }
+    }
+
+    &__button {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        transition: all ease-in 0.2s;
+
+        &:hover {
+            transform: scale(1.3);
+        }
+    }
+
+    &__title {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+    }
+}

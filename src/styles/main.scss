@@ -1,0 +1,23 @@
+@charset "utf-8";
+@import "../fonts/fonts.scss";
+
+// ? CUSTOM VARIABLES
+$golden: #B18667;
+
+// ? BULMA VARIABLES
+$dark: #232323;
+$primary: $golden;
+
+@import "~bulma/bulma.sass";
+
+@import "./base/layout";
+@import "./base/mixins";
+
+@import "./shared/navbar";
+@import "./shared/footer";
+@import "./shared/carousel";
+
+@import "./pages/home";
+@import "./pages/travel";
+@import "./pages/innovation";
+@import "./pages/experiences";
