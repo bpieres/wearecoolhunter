@@ -6,6 +6,7 @@ import InnovationLeft from "../../home/work/images/innovation-left"
 import InnovationRight from "../../home/work/images/innovation-right"
 
 import InnovationSelected from "./selected"
+import logoTrampoline from "../../../../static/trampoline_logo_white.svg"
 
 const InnovationList = () => {
     const [isSelected, setIsSelected] = useState(false)
@@ -33,7 +34,7 @@ const InnovationList = () => {
                     <h4 className="item--title has-text-white has-text-centered">
                         <img
                             loading="lazy"
-                            src="trampoline_logo_white.svg"
+                            src={logoTrampoline}
                             alt="Trampoline Network"
                             width="150px"
                         />

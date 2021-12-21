@@ -1,5 +1,5 @@
 import React from "react"
-
+import logoTrampoline from "../../../../static/trampoline_logo_white.svg"
 const InnovationSelected = () => (
     <div className="innovation__selected">
         <div className="container">
@@ -7,7 +7,7 @@ const InnovationSelected = () => (
                 <div className="condoor px-0 mx-0">
                 <a href="https://trampoline.network" target={'blank'}>
                     <img
-                        src="trampoline_logo_white.svg"
+                        src={logoTrampoline}
                         alt="Trampoline Network Logo"
                         loading="lazy"
                         className="mx-auto"
