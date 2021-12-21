@@ -33,7 +33,7 @@ const InnovationList = () => {
                     <h4 className="item--title has-text-white has-text-centered">
                         <img
                             loading="lazy"
-                            src="../trampoline_logo_white.svg"
+                            src="trampoline_logo_white.svg"
                             alt="Trampoline Network"
                             width="150px"
                         />

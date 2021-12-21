@@ -7,7 +7,7 @@ const InnovationSelected = () => (
                 <div className="condoor px-0 mx-0">
                 <a href="https://trampoline.network" target={'blank'}>
                     <img
-                        src="../trampoline_logo_white.svg"
+                        src="trampoline_logo_white.svg"
                         alt="Trampoline Network Logo"
                         loading="lazy"
                         className="mx-auto"
