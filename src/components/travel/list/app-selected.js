@@ -7,7 +7,7 @@ const AppSelected = () => (
                 <div className="item--buttons">
                     <a
                         href="https://www.vipexperience.com.ar/"
-                        className="visit-website"
+                        className="visit-website" target={'_blank'}
                     >
                         Visit Website
                     </a>

@@ -5,21 +5,23 @@ const InnovationSelected = () => (
         <div className="container">
             <div className="has-text-white innovation__selected--columns">
                 <div className="condoor px-0 mx-0">
+                <a href="https://trampoline.network" target={'blank'}>
                     <img
-                        src="/condoor-hub.png"
-                        alt="CondoorHub Logo"
+                        src="/trampoline_logo_white.svg"
+                        alt="Trampoline Network Logo"
                         loading="lazy"
                         className="mx-auto"
                     />
-
+                   
                     <div>
                         <h4 className="has-text-primary is-size-4 has-bold-text mb-3">
-                            Condoorhub
+                        Trampoline Network
                         </h4>
                         <p>
                             Building the world largest open innovation network
                         </p>
                     </div>
+                    </a>
                 </div>
                 {/* <div className="info px-0 mx-0">
                     <p className="pb-5">

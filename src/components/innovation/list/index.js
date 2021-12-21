@@ -33,9 +33,9 @@ const InnovationList = () => {
                     <h4 className="item--title has-text-white has-text-centered">
                         <img
                             loading="lazy"
-                            src="/condoor-hub.png"
-                            alt="Condoor Hub"
-                            width="100px"
+                            src="/trampoline_logo_white.svg"
+                            alt="Trampoline Network"
+                            width="150px"
                         />
                     </h4>
                     <div className="item--square --double">

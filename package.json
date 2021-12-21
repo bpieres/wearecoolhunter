@@ -23,7 +23,8 @@
     "react-helmet": "^6.1.0",
     "react-responsive-carousel": "^3.2.9",
     "resolve-url-loader": "^3.1.1",
-    "sass-loader": "^8.0.2"
+    "sass-loader": "^8.0.2",
+    "sharp": "^0.29.3"
   },
   "devDependencies": {
     "prettier": "2.0.5"
