@@ -9,7 +9,7 @@ import Desktop from "./images/desktop"
 const DesktopHeader = () => {
     return (
         <div className="home__header has-background-dark has-text-light">
-            <div className="container home__header--desktop-container is-fluid">
+            <div className="container home__header--desktop-container">
                 <div className="columns">
                     <div className="column golden-borders__container is-8">
                         <div className="golden-borders--desktop">
