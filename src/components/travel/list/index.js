@@ -145,7 +145,7 @@ const TravelList = () => {
                 {isSelected ? (
                     <ArrowDownIcon width="20px" color="white" />
                 ) : (
-                    <XIcon width="20px" color="#cfb385" />
+                    <XIcon width="20px" color="#B18667" />
                 )}
             </div>
 
@@ -174,7 +174,7 @@ const TravelList = () => {
                         }
                     >
                         <ArrowDownIcon
-                            color="#cfb385"
+                            color="#B18667"
                             width="20px"
                             customClasses="hide--button-arrow"
                         />

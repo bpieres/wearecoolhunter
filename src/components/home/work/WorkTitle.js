@@ -6,7 +6,7 @@ const WorkTitle = () => {
         <section className="home__work--title has-text-centered  has-text-white">
             <h2 className="is-size-3 is-size-2-desktop mb-5 pb-2">Work</h2>
 
-            <ArrowDownIcon width="50px" height="50px" color="#cfb385" />
+            <ArrowDownIcon width="50px" height="50px" color="#B18667" />
 
             <p className="pt-5 pb-3 px-5">
                 Being explorers is our{" "}

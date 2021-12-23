@@ -30,7 +30,7 @@ module.exports = {
                 short_name: `coolhunter`,
                 start_url: `/`,
                 background_color: `#232323`,
-                theme_color: `#cfb385`,
+                theme_color: `#B18667`,
                 display: `minimal-ui`,
                 icon: `static/favicon.png`, // This path is relative to the root of the site.
             },

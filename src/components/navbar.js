@@ -22,7 +22,7 @@ const NavbarDrawer = ({ siteTitle, drawerStatus, setDrawerStatus, goTo }) => {
                 className="navbar--drawer__button"
                 onClick={() => setDrawerStatus(false)}
             >
-                <XIcon color="#cfb385" width="25px" />
+                <XIcon color="#B18667" width="25px" />
             </button>
 
             <button onClick={() => goTo("/")} className="navbar--drawer__title">

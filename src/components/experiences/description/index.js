@@ -12,7 +12,7 @@ const ExperiencesDescription = () => {
             <ArrowDownIcon
                 width="35px"
                 height="35px"
-                color="#cfb385"
+                color="#B18667"
                 customClasses="experiences__description--arrow"
             />
         </div>
