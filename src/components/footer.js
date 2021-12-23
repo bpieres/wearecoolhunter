@@ -63,7 +63,7 @@ const Footer = () => {
                 <div className="footer__content--maps">
                     <a
                         href="https://goo.gl/maps/m6SNs1kSJyDHrtKx8"
-                        target="_blank"
+                        target="_blank" rel="noreferrer"
                     >
                         <h4 className="is-size-5 has-text-white">
                             Google Maps

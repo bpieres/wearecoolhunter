@@ -7,7 +7,7 @@ const FashionSelected = () => (
                 <div className="item--buttons">
                     <a
                         href=" https://experiences.global/access/fashion"
-                        target="_blank"
+                        target="_blank" rel="noreferrer"
                         className="visit-website"
                     >
                         #AMEXGLOBALDESIGNERS

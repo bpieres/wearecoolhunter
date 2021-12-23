@@ -48,8 +48,11 @@ const InnovationList = () => {
                     </p>
 
                     <div className="item--button">
-                        <button onClick={() => selectItem(true)}>
-                            View Work
+                        {/* <button onClick={() => selectItem(true)}> */}
+                        <button onClick={(e) => {e.preventDefault();
+                         window.open('https://trampoline.network', '_blank');
+                               }}>
+                            View Website                        
                         </button>
                         <ArrowDownIcon
                             width="20px"

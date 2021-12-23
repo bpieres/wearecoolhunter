@@ -7,7 +7,7 @@ const GastronomySelected = () => (
                 <div className="item--buttons">
                     <a
                         href="http://www.experiences.global/access/amexforfoodies"
-                        target="_blank"
+                        target="_blank" rel="noreferrer"
                         className="visit-website"
                     >
                         #AMEXFORFOODIES
@@ -15,7 +15,7 @@ const GastronomySelected = () => (
 
                     <a
                         href="https://go.bbva.com.ar/fgo/#/comunicaciones"
-                        target="_blank"
+                        target="_blank" rel="noreferrer"
                         className="visit-website"
                     >
                         Experiencias BBVA GO
